@@ -2,7 +2,7 @@ package dt265.tutorial1;
 
 import java.util.Scanner;
 
-/**
+/*
  * Created by brian on 31/03/2014.
  */
 
@@ -34,16 +34,22 @@ public class RandomNumbers {
      */
     @Override
     public String toString() {
-        // Use a string buffer to build up a string
-        StringBuffer sb = new StringBuffer();
-        // Showing an example of Java's forach() loop structure
-        for (int n: randomNumbers) {
+        // Use a string-buffer to build up a string
+        StringBuilder sb = new StringBuilder();
+        // Showing an example of Java's foreach() loop structure
+        for (int n : randomNumbers) {
+            // An example of call-chaining
             sb.append(n).append(", ");
         }
+        // Convert the string-buffer back to a string
         return sb.toString();
     }
 
     public static void main(String args[]) {
+        /*
+         * XXX The use of the scanner here is very brittle in
+         * that no error checking on the input is performed
+         */
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter length: ");
@@ -54,7 +60,7 @@ public class RandomNumbers {
 
         /*
          * Because there is a toString() method defined for
-         * object instances, we can do the following
+         * our object instances, we can do the following
          */
         System.out.println(new RandomNumbers(len, range));
     }
