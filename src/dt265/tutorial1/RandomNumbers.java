@@ -34,14 +34,14 @@ public class RandomNumbers {
      */
     @Override
     public String toString() {
-        // Use a string-buffer to build up a string
+        // Use a string-builder to build up a string
         StringBuilder sb = new StringBuilder();
         // Showing an example of Java's foreach() loop structure
         for (int n : randomNumbers) {
             // An example of call-chaining
             sb.append(n).append(", ");
         }
-        // Convert the string-buffer back to a string
+        // Convert the string-builder back to a string
         return sb.toString();
     }
 
