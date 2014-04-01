@@ -10,6 +10,8 @@ public class RandomNumbers {
     // Assume these default size and range values if not otherwise specified
     static private final int MAX = 10;
     static private final int RANGE = 100;
+
+    // Where we store the random numbers for each object instance
     private int[] randomNumbers;
 
     @SuppressWarnings("unused")
