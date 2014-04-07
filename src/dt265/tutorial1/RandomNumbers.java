@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by brian on 31/03/2014.
  */
 
-public class RandomNumbers {
+public class RandomNumbers extends Object {
     // Assume these default size and range values if not otherwise specified
     static private final int MAX = 10;
     static private final int RANGE = 100;
